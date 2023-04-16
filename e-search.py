@@ -45,7 +45,7 @@ def get_values():
     return dataset_header,dataset_rows[:-2]
 
 
-for locality in locality_data[:1]:
+for locality in locality_data:
     driver.get('https://esearch.delhigovt.nic.in/Complete_search.aspx')
     element = Select(driver.find_element("id","ctl00_ContentPlaceHolder1_ddl_sro_s"))
     element.select_by_visible_text('Central -Asaf Ali (SR III)')
